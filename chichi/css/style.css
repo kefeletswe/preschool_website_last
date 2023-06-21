@@ -10,16 +10,44 @@ body {
 
  /*kindergarten kids logo in nav bar*/ 
 
-#heading_area a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+
+#heading_area  {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
 
-.heading_area a h1 {
-  color: #fff;
-  font-family: sans-serif;
-  margin-left: 10px;
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+color: #fff;
+font-size: 17px;
+text-decoration: none;
+padding: 7px 13px;
+border-radius: 3px;
+border: 1px solid transparent;
+transition: 0.3s ease;
+
+}
+
+ul li a:hover {
+background-color: #fff;
+color: black;
+}
+a {
+  text-decoration: none;
 }
 #top_kids{
   color: yellow;
