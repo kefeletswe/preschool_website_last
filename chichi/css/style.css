@@ -1,59 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+
+/*body*/
 *{
-  padding: 0;
-  margin: 0;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
 }
-body {
-  font-family: Arial;}
-
- /*kindergarten kids logo in nav bar*/ 
-
-
-
-#heading_area  {
+/*headerlogo area and navigations*/
+.logo-area{
   color: #fff;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 25px;
+  font-size: 30px;
 }
 
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a{
-color: #fff;
-font-size: 17px;
-text-decoration: none;
-padding: 7px 13px;
-border-radius: 3px;
-border: 1px solid transparent;
-transition: 0.3s ease;
-
-}
-
-ul li a:hover {
-background-color: #fff;
-color: black;
-}
-a {
-  text-decoration: none;
-}
-#top_kids{
+#kids{
   color: yellow;
 }
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url();/*add image here*/
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 
-.top-bar{
+nav{
   width: 100%;
   height: 100px;
   background: #0f4675;
@@ -67,50 +41,54 @@ a {
   right: 0;
   
 }
-/*checkbox*/
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+
+.nav-area{
+  flex: 1;
+  text-align: right;
+  margin-right: 15px;
   cursor: pointer;
-  display: none;
+
 }
 
-#check{
-  display: none;
-}
-@media (max-width: 952px) {
-  .heading_area{
-  font-size: 20px;
-  padding-left: 50px;
-
-  }
-  nav ul li a{
-      font-size: 16px;
-  }
+.nav-area ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 6px 15px;
+  position: relative;
 }
 
-@media (max-width: 858px) {
-  .checkbtn{
-      display: block;
-
-  }
-  ul{
-      position: fixed;
-      width: 100%;
-      height:100vh;
-      background: pink;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-
-  }
-  nav ul li{
-      display: block;
-  }
-  nav ul li a{
-      font-size: 20px;
-  }
+.nav-area ul li a{
+  color: #fff;;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
 }
+
+ul li a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /*kindergarten kids logo in nav bar*/ 
+
+
+
+
+
+/*END OF checkbox*/
+
+/*media queries for navbar to be responsice on all screens*/
+
+  /*END OFMmedia queries for navbar to be responsice on all screens*/
