@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
 /*body*/
 *{
   margin: 0%;
   padding: 0%;
+  border: none;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
@@ -92,6 +93,10 @@ ul li a:hover {
 
 }
 
+nav .fa{
+  display: none;
+}
+
 
 @media(max-width:700px){
   .middle_info h1{
@@ -110,7 +115,18 @@ ul li a:hover {
   z-index: 2;
 
   }
+nav .fa{
+  display: block;
+  color:#fff ;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
 
+.nav-area ul{
+  padding: 50px;
+  /*remove space btewn*/ 
+}
 }
 
 
