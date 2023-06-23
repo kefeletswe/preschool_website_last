@@ -31,7 +31,7 @@ nav{
   width: 100%;
   height: 100px;
   background: #0f4675;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +40,7 @@ nav{
   left: 0;
   right: 0;
   
+  
 }
 
 .nav-area{
@@ -47,6 +48,7 @@ nav{
   text-align: right;
   margin-right: 15px;
   cursor: pointer;
+  text-transform: uppercase;
 
 }
 
@@ -72,19 +74,44 @@ ul li a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
  /*kindergarten kids logo in nav bar*/ 
 
 
+.middle_info {
+    
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../chichi/images/computer.jpg);
+    background-size: cover;
+    font-family: Oswald, sans-serif;
+    background-position: center;
 
+    
+
+}
+
+
+@media(max-width:700px){
+  .middle_info h1{
+  font-size: 35px;
+  }
+.nav-area ul li{
+  display: block;}
+  .nav-area{
+  position: absolute;
+  background: yellow;
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  right: 0;
+  text-align: left;
+  z-index: 2;
+
+  }
+
+}
 
 
 /*END OF checkbox*/
