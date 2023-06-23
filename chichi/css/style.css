@@ -89,15 +89,38 @@ ul li a:hover {
     margin-top: 100px;
     padding-top: 248px;
     padding-bottom: 248px;
-    background: url(../images/background\ school.jpg) no-repeat center center;
+    background: url(../images/istockphoto-1210604327-612x612.jpg) no-repeat center center;
     /*background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/background\ school.jpg);*/
     background-size: cover;
     font-family: Oswald, sans-serif;
-    background-position: center;
+    background-position: center; 
+    overflow: hidden;
 
-    
+     /* animates zoom effect on loading page */
+     animation-name: hero-zoom;
+     animation-duration: 5s;
+     animation-fill-mode: forwards;
 
 }
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.1);
+  }
+}
+
+.middle_info h1,p{
+  color: #fff;
+  font-family: lato;
+  font-size: 35px;}
+
+  .middle_info p{
+    font-size: 17px;
+  }
 
 nav .fa{
   display: none;
