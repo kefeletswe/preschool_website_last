@@ -4,17 +4,13 @@
 *{
   margin: 0%;
   padding: 0%;
+  margin-top: 0%;
   border: none;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
 
-h1, h2 {
-  font-family: Oswald, sans-serif;
-  
-  letter-spacing: 4px;
-  color: #252525;
-}
+/*headerlogo area and navigations*/
 
 #logo {
   float: left;
@@ -26,20 +22,17 @@ h1, h2 {
   color: yellow;
 }
 
-
-/*headerlogo area and navigations*/
-
-
 #menu {
   font-size: 110%;
   letter-spacing: 2px;
 }
 
 #menu, #logo {
-  line-height: 75px;
+  line-height: 100px;
 }
 
 #menu li {
+  
   float: right;
   list-style-type: none;
   margin-right: 30px;
@@ -47,11 +40,15 @@ h1, h2 {
 
 #menu a {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
+  padding: 10px 10px;
+  border: 0.5px solid transparent;
+  transition: 0.3s ease;
 }
 
 #menu a:hover {
-  border-bottom: 1px solid #3a3a3a;
+  background-color: #fff;
+  color: black;
 }
 
 .nav-area{
@@ -61,6 +58,7 @@ h1, h2 {
   background: #0f4675;
   font-family: sans-serif;
   align-items: center;
+  position: fixed;
   
 }
 
@@ -68,141 +66,27 @@ h1, h2 {
   color: #fff;
 }
 
+ 
 
-/*.logo-area{
-  color: #fff;
-  font-family: sans-serif;
-  margin-left: 25px;
-  font-size: 30px;
-  float: left;
-}
-/*line-height will make logo and nav area to be horizontal
-.logo-area, ul{
-  line-height: 75px;
-}
-
-#kids{
-  color: yellow;
-}
-.header{
-  min-height: 100vh;
-  width: 100%;
-  
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-nav{
-  width: 100%;
-  height: 100px;
-  background: #0f4675;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  
-  
-}
-
-.nav-area{
-  flex: 1;
-  text-align: right;
-  margin-right: 15px;
-  cursor: pointer;
-  text-transform: uppercase;
-
-}
-
-.nav-area ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 6px 15px;
-  position: relative;
-}
-
-.nav-area ul li a{
-  color: #fff;;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 10px 20px;
-  border: 1px solid transparent;
-  transition: 0.3s ease;
-}
-
-ul li a:hover {
-  background-color: #fff;
-  color: black;
-}*/
-
-
-/* hero image and cover text */
-
-#hero-outer {
-  height: 600px;
-  width: 100%;
-  overflow: hidden;
-
-  position: relative;
-}
-
-#cover-text, #cover-text h2 {
-  color: #fff;
-}
-
-#hero-image {
-  height: 600px;
-  width: 100%;
-  background: url('../images/hero-image.webp') no-repeat center center;
-
-  /* animates zoom effect on loading page */
-  animation-name: hero-zoom;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
- /*kindergarten kids logo in nav bar*/ 
-
-
-/*.middle_info {
-    
+.middle_info {
     text-align: center;
-    margin-top: 100px;
-    padding-top: 248px;
-    padding-bottom: 248px;
-    background: url(../images/istockphoto-1210604327-612x612.jpg) no-repeat center center;
-    /*background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/background\ school.jpg);
+    padding-top: 340px;
+    padding-bottom: 250px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/computer.jpg);
     background-size: cover;
-    font-family: Oswald, sans-serif;
+    font-family: Roboto, sans-serif;
     background-position: center; 
-    overflow: hidden;
+   
 
-     animates zoom effect on loading page 
-     animation-name: hero-zoom;
-     animation-duration: 5s;
-     animation-fill-mode: forwards;
-}*/
+}
 
 
-
-/* creates the level of zoom for hero image */
-/* @keyframes hero-zoom {
-  from{
-      transform: scale(1);
-  }
-  to{
-      transform: scale(1.1);
-  }
-}*/
-
-.middle_info h1,p{
+.cover_text{
   color: #fff;
   font-family: lato;
-  font-size: 35px;}
+  font-size: 35px;
+  
+}
 
   .middle_info p{
     font-size: 17px;
@@ -214,21 +98,169 @@ ul li a:hover {
 
   #menu {
       clear: left;
+      display: flex;
     
       margin-left: 3px;
+      margin-right: 6px;
       margin-bottom: 20px;
       line-height: 25px;
-      padding-left: 8px;
+      padding-left: 20px;
       align-items: center;
-      background-color: purple;
+      font-size: 17px;
+      
   }
 
-  #logo{
-    margin-left: 15px;
+  .logo-container{
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    
   }
+
+.nav-area{
+ 
+  height: 25vh;
 }
-/*END OF checkbox*/
 
+.cover_text{
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.cover_text{
+  line-height: 32px;
+}
+
+/*about us section*/
+.row{
+  flex-direction: column;
+}
+
+.about_us{
+  
+  padding-left: 10px;
+  margin-right: 1000px;
+  
+
+}
+
+}
+
+/*about us section*/
+.about_us{
+  width: 90%;
+  text-align: center;
+  padding-top: 100px;
+  margin-left: 70px;
+}
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#para {color: #777;}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_col{
+  flex-basis: 31%;
+  background: pink;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+
+.about_col:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, .5);
+
+}
+/* end of about us CSS*/
+
+/*facilities start section*/
+
+.facilities_col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities_col img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities_col p{
+padding: 0;
+}
+
+.facilities_col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+/*facilities end section*/
+
+/*team start section*/
+.team_colomn{
+  flex-basis: 31%;
+  background: pink;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.team{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*team end section*/
+
+
+#footer{
+  padding: 100px 0 20px;
+  background: antiquewhite;
+}
+
+#footer_p,#footer_h{
+  text-align: center;
+}
+
+.title-text{
+  padding-bottom: 10px;
+}
+
+.footer_row{
+width: 80%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.footer_right, .footer_left{
+
+  flex-basis: 45%;
+  margin-bottom: 20px;
+
+}
+
+.footer_right{
+  text-align: right;
+}
 /*media queries for navbar to be responsice on all screens*/
 
   /*END OFMmedia queries for navbar to be responsice on all screens*/
