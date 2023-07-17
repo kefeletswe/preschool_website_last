@@ -2,9 +2,10 @@
 
 /*body*/
 *{
-  margin: 0%;
-  padding: 0%;
-  margin-top: 0%;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
   border: none;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
@@ -93,59 +94,7 @@
   }
 
 
-/* for navbar icons to only show on small screens */
-@media screen and (max-width: 950px) {
 
-  #menu {
-      clear: left;
-      display: flex;
-    
-      margin-left: 3px;
-      margin-right: 6px;
-      margin-bottom: 20px;
-      line-height: 25px;
-      padding-left: 20px;
-      align-items: center;
-      font-size: 17px;
-      
-  }
-
-  .logo-container{
-    font-size: 15px;
-    margin-bottom: 20px;
-
-    
-  }
-
-.nav-area{
- 
-  height: 25vh;
-}
-
-.cover_text{
-  text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.cover_text{
-  line-height: 32px;
-}
-
-/*about us section*/
-.row{
-  flex-direction: column;
-}
-
-.about_us{
-  
-  padding-left: 10px;
-  margin-right: 1000px;
-  
-
-}
-
-}
 
 /*about us section*/
 .about_us{
@@ -183,9 +132,87 @@ h1{
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, .5);
 
 }
+
+
+
+
+/* about us end */
+
+.why-choose-us{
+  width: 100%;
+  padding: 50px 0;
+}
+
+.choose_us h1{
+  margin: auto;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.choose_us_box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.reasons{
+  flex-basis: 40%;
+}
+
+.reasons_img{
+  flex-basis: 50%;
+  margin: auto;
+  
+}
+
+.reasons_img img{
+  width: 70%;
+  border-radius: 10px;
+ 
+}
+
+.reasons h1{
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #009688;
+
+}
+
+.reasons_description{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.reasons_icon .fa{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  color: #009688;
+  border: 1px solid #009688;
+
+}
+
+.reasons_text p{
+  padding: 0 20px;
+  text-align: initial;
+
+}
+
 /* end of about us CSS*/
 
 /*facilities start section*/
+
+.facilities{
+  width: 100%;
+  padding: 50px 0;
+}
 
 .facilities_col{
   flex-basis: 31%;
@@ -208,31 +235,28 @@ padding: 0;
   margin-bottom: 15px;
   text-align: left;
 }
+
+.f_text h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
+.f_text p{
+  text-align: center;
+}
 /*facilities end section*/
 
 /*team start section*/
-.team_colomn{
-  flex-basis: 31%;
-  background: pink;
-  border-radius: 10px;
-  margin-bottom: 10%;
-  padding: 20px 20px;
-  box-sizing: border-box;
-  transition: 0.3s;
-}
 
-.team{
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
 
 /*team end section*/
 
 
 #footer{
-  padding: 100px 0 20px;
-  background: antiquewhite;
+  padding: 90px 0 20px;
+  background: blue;
 }
 
 #footer_p,#footer_h{
@@ -261,6 +285,130 @@ flex-wrap: wrap;
 .footer_right{
   text-align: right;
 }
+
+.social_icons{
+  display: flex;
+  justify-content: center;
+}
+
+.social_icons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: orangered;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.social_icons a i{
+  font-size: 2rem;
+  color: black;
+  opacity: 0.9;
+}
+
+.footer_bottom{
+  background-color: green;
+  padding: 28px;
+  text-align: center;
+}
+
+.bottom{
+  background-color: green;
+  padding: 10px;
+  
+}
+
+.footer_bottom p{
+  color: yellow;
+}
+
+/* hover effect for social icons*/
+.social_icons a:hover{
+  background-color: blue;
+  transition: 0.3s;
+}
+
+.social_icons a:hover i{
+  color: yellow;
+  transition: 0.3s;
+}
+
+/*media queries for footer*/
+@media screen and (max-width: 700px){
+
+}
 /*media queries for navbar to be responsice on all screens*/
+
+
+/* for navbar icons to only show on small screens */
+@media screen and (max-width: 770px) {
+
+  #menu {
+      clear: left;
+      display: flex;
+    
+      margin-left: 3px;
+      margin-right: 6px;
+      margin-bottom: 20px;
+      line-height: 25px;
+      padding-left: 20px;
+      align-items: center;
+      font-size: 17px;
+      
+  }
+
+  .logo-container{
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    
+  }
+
+.nav-area{
+ 
+  height: 25vh;
+}
+
+.cover_text{
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.cover_text{
+  line-height: 32px;
+}
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 770px){
+/*about us section*/
+.row{
+  flex-direction: column;
+}
+
+.about_us{
+  
+  padding-left: 10px;
+  margin-right: 1000px;
+  
+
+}}
+
+@media screen and (max-width: 770px){
+  /*why choose us media queries*/
+  
+  .choose_us h1{
+    font-size: 35px;
+  
+  }
+  
+  .reasons{
+  flex-basis: 50%;
+  }}
 
   /*END OFMmedia queries for navbar to be responsice on all screens*/
